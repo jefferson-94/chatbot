@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Conversation;
-use App\Models\JsonLog;
 use App\Models\Message;
 use App\Models\WhatsappAccount;
 use Illuminate\Support\Facades\Storage;
@@ -32,39 +31,15 @@ class WebhookController extends Controller
     public function receive(Request $request)
     {
         $data = $request->all();
-        $json = $request->getContent();
 
         // 🔹 Salva o JSON completo no .txt para testes
         $logFile = storage_path('logs/whatsapp_messages.txt');
         file_put_contents($logFile, now() . " - RECEBIDO:\n" . json_encode($data, JSON_PRETTY_PRINT) . "\n\n", FILE_APPEND);
 
-        // 🔹 Salvar JSON no banco (json_logs)
-        $jsonNormalized = json_encode(json_decode($json), JSON_UNESCAPED_UNICODE);
-        $entryId = $data['entry'][0]['id'] ?? null;
-        $messages = $data['entry'][0]['changes'][0]['value']['messages'] ?? [];
-
-        foreach ($messages as $message) {
-            $messageId = $message['id'] ?? null;
-            $type = $message['type'] ?? null;
-
-            $exists = JsonLog::where('message_id', $messageId)->exists();
-
-            if (!$exists) {
-                JsonLog::create([
-                    'entry_id' => $entryId,
-                    'message_id' => $messageId,
-                    'type' => $type,
-                    'payload' => $jsonNormalized,
-                ]);
-            }
-        }
-
-        // Se não tiver entry, retorna
         if (!isset($data['entry'])) {
             return response()->json(['status' => 'no_entry'], 200);
         }
 
-        // 🔹 Continua com a lógica normal
         foreach ($data['entry'] as $entry) {
             foreach ($entry['changes'] as $change) {
                 $value = $change['value'];
@@ -72,7 +47,9 @@ class WebhookController extends Controller
                 $phoneNumberId = $value['metadata']['phone_number_id'] ?? null;
                 $account = WhatsappAccount::where('phone_number_id', $phoneNumberId)->first();
 
-                if (!$account) continue;
+                if (!$account) {
+                    continue;
+                }
 
                 foreach ($value['messages'] ?? [] as $msg) {
                     $from = $msg['from'];
@@ -102,7 +79,7 @@ class WebhookController extends Controller
                                 'audio' => 'ogg',
                                 'video' => 'mp4',
                                 'image' => 'jpg',
-                                'document' => 'pdf',
+                                'document' => 'pdf', // ou outro
                                 default => 'bin',
                             };
 
@@ -135,18 +112,14 @@ class WebhookController extends Controller
                         $content = 'Tipo de mensagem não tratada: ' . $type;
                     }
 
-                    try {
-                        Message::create([
-                            'conversation_id' => $conversation->id,
-                            'sender_type' => 'client',
-                            'content' => $content,
-                            'media' => $media,
-                            'sent_at' => date('Y-m-d H:i:s', $timestamp),
-                            'raw_payload' => json_encode($msg, JSON_UNESCAPED_UNICODE),
-                        ]);
-                    } catch (\Throwable $e) {
-                        file_put_contents(storage_path('logs/webhook_errors.txt'), now() . " - ERRO: " . $e->getMessage() . "\n", FILE_APPEND);
-                    }
+                    Message::create([
+                        'conversation_id' => $conversation->id,
+                        'sender_type' => 'client',
+                        'content' => $content,
+                        'media' => $media,
+                        'sent_at' => date('Y-m-d H:i:s', $timestamp),
+                        'raw_payload' => json_encode($msg, JSON_UNESCAPED_UNICODE),
+                    ]);
                 }
             }
         }
@@ -159,7 +132,7 @@ class WebhookController extends Controller
         try {
             // Etapa 1: obter URL temporária
             $response = Http::withToken($token)
-                ->get("https://graph.facebook.com/v23.0/{$mediaId}");
+                ->get("https://graph.facebook.com/v18.0/{$mediaId}");
 
             if (!$response->ok()) return null;
 
