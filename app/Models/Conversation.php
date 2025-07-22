@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Conversation extends Model
 {
     use HasFactory;
+    
+    protected $table = 'conversations';
 
     protected $fillable = [
         'whatsapp_account_id',

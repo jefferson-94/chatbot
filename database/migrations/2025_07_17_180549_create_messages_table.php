@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('content')->nullable(); // texto da mensagem
             $table->json('media')->nullable(); // arquivos (imagem, áudio, etc.)
             $table->timestamp('sent_at')->nullable();
-            $table->timestamps();
+            $table->timestamps(); // cria created_at e updated_at
         });
     }
 

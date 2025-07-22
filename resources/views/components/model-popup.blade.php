@@ -86,7 +86,6 @@
     </div>
 </div>
 <!-- /Add Call -->
-
  <!-- Block User -->
  <div class="modal fade" id="block-user">
     <div class="modal-dialog modal-dialog-centered">
@@ -119,7 +118,6 @@
     </div>
 </div>
 <!-- /Block User -->
-
 <!-- Voice Call -->
 <div class="modal fade" id="voice_call">
     <div class="modal-dialog  modal-dialog-centered">
@@ -154,7 +152,6 @@
     </div>
 </div>
 <!-- /Voice Call -->
-
 <!--Group Voice Call -->
 <div class="modal fade" id="group_voice">
     <div class="modal-dialog modal-dialog-centered">
@@ -200,7 +197,6 @@
     </div>
 </div>
 <!-- /Group Voice Call -->
-
 <!-- Voice Call attend -->
 <div class="modal voice-call fade" id="voice_attend">
     <div class="modal-dialog modal-dialog-centered">
@@ -279,7 +275,6 @@
     </div>
 </div>
 <!-- /Voice Call attend -->
-
 <!-- Voice Call group -->
 <div class="modal fade" id="voice_group" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -367,7 +362,6 @@
                             </div>
                                     
                         </div>
-
                     </div>  
                     <div class="tab-pane fade active show" id="pills-group1" role="tabpanel" aria-labelledby="pills-group1-tab">
                         <div class="row">
@@ -508,7 +502,6 @@
     </div>
 </div>
 <!-- /Voice Call group -->
-
 <!-- Video Call -->
 <div class="modal fade" id="video-call">
     <div class="modal-dialog modal-dialog-centered">
@@ -680,7 +673,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>  
                     <div class="tab-pane fade active show" id="pills-group2" role="tabpanel" aria-labelledby="pills-group2-tab">
                         <div class="row row-gap-4">
@@ -712,7 +704,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="modal-footer justify-content-center border-0">
@@ -745,7 +736,6 @@
     </div>
 </div>
 <!-- /Video Call group -->
-
 <!--Group Video Call -->
 <div class="modal fade" id="group_video">
     <div class="modal-dialog modal-dialog-centered">
@@ -880,7 +870,6 @@
     </div>
 </div>
 <!-- /Mute User -->            
-
 <!-- Delete  Account -->
 <div class="modal fade" id="delete-account">
     <div class="modal-dialog modal-dialog-centered">
@@ -939,7 +928,6 @@
     </div>
 </div>
 <!-- /Delete Account -->
-
 <!-- Logout -->
 <div class="modal fade" id="acc-logout">
     <div class="modal-dialog modal-dialog-centered">
@@ -973,9 +961,7 @@
 </div>
 <!-- /Logout -->
 @endif
-
 @if(Route::is(['chat']))
-
    <!-- Mute -->
    <div class="modal fade" id="mute-notification">
     <div class="modal-dialog modal-dialog-centered">
@@ -1187,7 +1173,6 @@
     </div>
 </div>
 <!-- /Block User -->
-
 <!-- Report User -->
 <div class="modal fade" id="report-user">
     <div class="modal-dialog modal-dialog-centered">
@@ -1221,7 +1206,6 @@
     </div>
 </div>
 <!-- /Report User -->
-
 <!-- Delete Chat -->
 <div class="modal fade" id="delete-chat">
     <div class="modal-dialog modal-dialog-centered">
@@ -1254,7 +1238,6 @@
     </div>
 </div>
 <!-- /Delete Chat -->
-
 <!-- New Chat -->
 <div class="modal fade" id="new-chat">
     <div class="modal-dialog modal-dialog-centered">
@@ -1346,7 +1329,6 @@
     </div>
 </div>
 <!-- /New Chat -->            
-
 <!-- Add Contact -->
 <div class="modal fade" id="add-contact">
     <div class="modal-dialog modal-dialog-centered">
@@ -1505,7 +1487,6 @@
     </div>
 </div>
 <!-- /Add Contact -->
-
 <!-- Contact Detail -->
 <div class="modal fade" id="contact-details">
     <div class="modal-dialog modal-dialog-centered">
@@ -1637,7 +1618,6 @@
     </div>
 </div>
 <!-- /Contact Detail -->
-
 <!-- Voice Call -->
 <div class="modal fade" id="voice_call">
     <div class="modal-dialog modal-dialog-centered">
@@ -1672,7 +1652,6 @@
     </div>
 </div>
 <!-- /Voice Call -->
-
 <!-- Voice Call attend -->
 <div class="modal fade" id="voice_attend" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -1751,7 +1730,6 @@
     </div>
 </div>
 <!-- /Voice Call attend -->
-
 <!-- Voice Call group -->
 <div class="modal fade" id="voice_group" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -1839,7 +1817,6 @@
                             </div>
                                     
                         </div>
-
                     </div>  
                     <div class="tab-pane fade active show" id="pills-group1" role="tabpanel" aria-labelledby="pills-group1-tab">
                         <div class="row">
@@ -1980,7 +1957,6 @@
     </div>
 </div>
 <!-- /Voice Call group -->
-
 <!-- Video Call -->
 <div class="modal fade" id="video-call">
     <div class="modal-dialog modal-dialog-centered">
@@ -2152,7 +2128,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>  
                     <div class="tab-pane fade active show" id="pills-group2" role="tabpanel" aria-labelledby="pills-group2-tab">
                         <div class="row row-gap-4">
@@ -2184,7 +2159,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="modal-footer justify-content-center border-0">
@@ -2217,7 +2191,6 @@
     </div>
 </div>
 <!-- /Video Call group -->
-
  <!-- Invite -->
  <div class="modal fade" id="invite">
     <div class="modal-dialog modal-dialog-centered">
@@ -2345,7 +2318,6 @@
     </div>
 </div>
 <!-- /Mute User -->            
-
 <!-- Delete  Account -->
 <div class="modal fade" id="delete-account">
     <div class="modal-dialog modal-dialog-centered">
@@ -2404,7 +2376,6 @@
     </div>
 </div>
 <!-- /Delete Account -->
-
 <!-- Logout -->
 <div class="modal fade" id="acc-logout">
     <div class="modal-dialog modal-dialog-centered">
@@ -2437,9 +2408,7 @@
     </div>
 </div>
 <!-- /Logout -->
-
 @endif
-
 @if(Route::is(['group-chat']))
   <!-- Invite -->
   <div class="modal fade" id="invite">
@@ -2479,7 +2448,6 @@
     </div>
 </div>
 <!-- /Invite --> 
-
 <!-- Mute -->
 <div class="modal fade" id="mute-notification">
     <div class="modal-dialog modal-dialog-centered">
@@ -2536,7 +2504,6 @@
     </div>
 </div>
 <!-- /Mute -->
-
  <!-- Disapperaing Message -->
 <div class="modal fade" id="msg-disapper">
     <div class="modal-dialog modal-dialog-centered">
@@ -2586,7 +2553,6 @@
     </div>
 </div>
 <!-- /Disapperaing Message -->
-
 <!-- Group Settings -->
 <div class="chat-offcanvas offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="group-settings">
     <div class="offcanvas-header">
@@ -2658,7 +2624,6 @@
     </div>
 </div>
 <!-- /Group Settings -->
-
 <!-- Edit Group Settings -->
 <div class="modal fade" id="approve-participants">
     <div class="modal-dialog modal-dialog-centered">
@@ -2700,7 +2665,6 @@
     </div>
 </div>
 <!-- /Edit Group Settings -->
-
 <!-- Block User -->
 <div class="modal fade" id="block-user">
     <div class="modal-dialog modal-dialog-centered">
@@ -2733,7 +2697,6 @@
     </div>
 </div>
 <!-- /Block User -->
-
 <!-- Report User -->
 <div class="modal fade" id="report-user">
     <div class="modal-dialog modal-dialog-centered">
@@ -2767,7 +2730,6 @@
     </div>
 </div>
 <!-- /Report User -->
-
 <!-- Delete Chat -->
 <div class="modal fade" id="delete-chat">
     <div class="modal-dialog modal-dialog-centered">
@@ -2800,7 +2762,6 @@
     </div>
 </div>
 <!-- /Delete Chat -->
-
 <!-- Voice Call -->
 <div class="modal fade" id="voice_call">
     <div class="modal-dialog modal-dialog-centered">
@@ -2835,8 +2796,6 @@
     </div>
 </div>
 <!-- /Voice Call -->
-
-
 <!-- Voice Call attend -->
 <div class="modal voice-call fade" id="voice_attend" >
     <div class="modal-dialog modal-dialog-centered">
@@ -2915,7 +2874,6 @@
     </div>
 </div>
 <!-- /Voice Call attend -->
-
 <!-- Voice Call group -->
 <div class="modal voice-call fade" id="voice_group">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -3003,7 +2961,6 @@
                             </div>
                                     
                         </div>
-
                     </div>  
                     <div class="tab-pane fade active show" id="pills-group" role="tabpanel" aria-labelledby="pills-group-tab">
                         <div class="row">
@@ -3144,7 +3101,6 @@
     </div>
 </div>
 <!-- /Voice Call group -->
-
 <!-- Video Call -->
 <div class="modal fade" id="video-call">
     <div class="modal-dialog modal-dialog-centered">
@@ -3245,7 +3201,6 @@
         </div>
     </div>
     </div>
-
 <!--Group Video Call -->
 <div class="modal fade" id="group_video">
     <div class="modal-dialog modal-dialog-centered">
@@ -3291,7 +3246,6 @@
     </div>
 </div>
 <!-- /Group Video Call -->
-
 <!-- Video Call group -->
 <div class="modal fade" id="video_group" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -3363,7 +3317,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>  
                 <div class="tab-pane fade active show" id="pills-group2" role="tabpanel" aria-labelledby="pills-group2-tab">
                     <div class="row row-gap-4">
@@ -3395,7 +3348,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="modal-footer justify-content-center border-0">
@@ -3428,7 +3380,6 @@
 </div>
 </div>
 <!-- /Video Call group -->
-
 <!-- Add Call -->
 <div class="modal fade" id="new-call">
 <div class="modal-dialog modal-dialog-centered">
@@ -3516,7 +3467,6 @@
 </div>
 </div>
 <!-- /Add Call -->
-
 <!-- Edit Group Settings -->
 <div class="modal fade" id="edit-group">
     <div class="modal-dialog modal-dialog-centered">
@@ -3558,7 +3508,6 @@
     </div>
 </div>
 <!-- /Edit Group Settings -->
-
 <!-- Edit Group Admins -->
 <div class="modal fade" id="edit-admin">
     <div class="modal-dialog modal-dialog-centered">
@@ -3650,7 +3599,6 @@
     </div>
 </div>
 <!-- /Edit Group Admins --> 
-
 <!-- New Chat -->
 <div class="modal fade" id="new-chat">
     <div class="modal-dialog modal-dialog-centered">
@@ -3742,7 +3690,6 @@
     </div>
 </div>
 <!-- /New Chat -->            
-
 <!-- Add Contact -->
 <div class="modal fade" id="add-contact">
     <div class="modal-dialog modal-dialog-centered">
@@ -3901,7 +3848,6 @@
     </div>
 </div>
 <!-- /Add Contact -->
-
 <!-- New Group -->
 <div class="modal fade" id="new-group">
 <div class="modal-dialog modal-dialog-centered">
@@ -3969,7 +3915,6 @@
 </div>
 </div>
 <!-- /New Group --> 
-
 <!--Group Voice Call -->
 <div class="modal fade" id="group_voice">
 <div class="modal-dialog modal-dialog-centered">
@@ -4015,7 +3960,6 @@
 </div>
 </div>
 <!-- /Group Voice Call -->
-
 <!-- Add Group -->
 <div class="modal fade" id="add-group">
 <div class="modal-dialog modal-dialog-centered">
@@ -4107,7 +4051,6 @@
 </div>
 </div>
 <!-- /Add group -->
-
 <!-- Contact Detail -->
 <div class="modal fade" id="contact-details">
     <div class="modal-dialog modal-dialog-centered">
@@ -4239,7 +4182,6 @@
     </div>
 </div>
 <!-- /Contact Detail -->
-
 <!-- Logout -->
 <div class="modal fade" id="group-logout">
     <div class="modal-dialog modal-dialog-centered">
@@ -4278,7 +4220,6 @@
     </div>
 </div>
 <!-- /Logout -->
-
 <!-- Report Group -->
 <div class="modal fade" id="report-group">
     <div class="modal-dialog modal-dialog-centered">
@@ -4321,7 +4262,6 @@
     </div>
 </div>
 <!-- /Report Group -->
-
 <!-- Mute User -->
 <div class="modal fade" id="mute-user">
     <div class="modal-dialog modal-dialog-centered">
@@ -4411,7 +4351,6 @@
     </div>
 </div>
 <!-- /Mute User -->            
-
 <!-- Delete  Account -->
 <div class="modal fade" id="delete-account">
     <div class="modal-dialog modal-dialog-centered">
@@ -4470,7 +4409,6 @@
     </div>
 </div>
 <!-- /Delete Account -->
-
 <!-- Logout -->
 <div class="modal fade" id="acc-logout">
     <div class="modal-dialog modal-dialog-centered">
@@ -4503,11 +4441,8 @@
     </div>
 </div>
 <!-- /Logout -->
-
 @endif
-
 @if(Route::is(['index']))
-
  <!-- Add Contact -->
  <div class="modal fade" id="add-contact">
     <div class="modal-dialog modal-dialog-centered">
@@ -4666,7 +4601,6 @@
     </div>
 </div>
 <!-- /Add Contact -->
-
 <!-- Add Call -->
 <div class="modal fade" id="new-call">
     <div class="modal-dialog modal-dialog-centered">
@@ -4754,7 +4688,6 @@
     </div>
 </div>
 <!-- /Add Call -->
-
 <!-- Edit Contact -->
 <div class="modal fade" id="edit-contact">
     <div class="modal-dialog modal-dialog-centered">
@@ -4913,7 +4846,6 @@
     </div>
 </div>
 <!-- /Edit Contact -->
-
 <!-- Contact Detail -->
 <div class="modal fade" id="contact-details">
     <div class="modal-dialog modal-dialog-centered">
@@ -5045,7 +4977,6 @@
     </div>
 </div>
 <!-- /Contact Detail -->
-
   <!-- Invite -->
   <div class="modal fade" id="invite">
     <div class="modal-dialog modal-dialog-centered">
@@ -5084,8 +5015,6 @@
     </div>
 </div>
 <!-- /Invite -->     
-
-
 <!-- New Chat -->
 <div class="modal fade" id="new-chat">
     <div class="modal-dialog modal-dialog-centered">
@@ -5177,7 +5106,6 @@
     </div>
 </div>
 <!-- /New Chat -->  
-
 <!-- Delete Chat -->
 <div class="modal fade" id="delete-chat">
     <div class="modal-dialog modal-dialog-centered">
@@ -5245,7 +5173,6 @@
     </div>
 </div>
 <!-- /Voice Call -->
-
 <!-- Voice Call attend -->
 <div class="modal fade" id="voice_attend" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -5324,7 +5251,6 @@
     </div>
 </div>
 <!-- /Voice Call attend -->
-
 <!-- Voice Call group -->
 <div class="modal fade" id="voice_group" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -5412,7 +5338,6 @@
                             </div>
                                     
                         </div>
-
                     </div>  
                     <div class="tab-pane fade active show" id="pills-group1" role="tabpanel" aria-labelledby="pills-group1-tab">
                         <div class="row">
@@ -5553,7 +5478,6 @@
     </div>
 </div>
 <!-- /Voice Call group -->
-
 <!-- Video Call -->
 <div class="modal fade" id="video-call">
     <div class="modal-dialog modal-dialog-centered">
@@ -5655,7 +5579,6 @@
         </div>
     </div>
 </div>                    
-
 <!-- Video Call group -->
 <div class="modal fade" id="video_group" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -5727,7 +5650,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>  
                     <div class="tab-pane fade active show" id="pills-group2" role="tabpanel" aria-labelledby="pills-group2-tab">
                         <div class="row row-gap-4">
@@ -5759,7 +5681,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="modal-footer justify-content-center border-0">
@@ -5792,7 +5713,6 @@
     </div>
 </div>
 <!-- /Video Call group -->
-
 <!-- Block User -->
 <div class="modal fade" id="block-user">
     <div class="modal-dialog modal-dialog-centered">
@@ -5825,7 +5745,6 @@
     </div>
 </div>
 <!-- /Block User -->
-
 <!-- New Group -->
 <div class="modal fade" id="new-group">
     <div class="modal-dialog modal-dialog-centered">
@@ -5893,7 +5812,6 @@
     </div>
 </div>
 <!-- /New Group --> 
-
 <!-- Add Group -->
 <div class="modal fade" id="add-group">
     <div class="modal-dialog modal-dialog-centered">
@@ -5985,7 +5903,6 @@
     </div>
 </div>
 <!-- /Add group -->  
-
 <!-- Mute User -->
 <div class="modal fade" id="mute-user">
     <div class="modal-dialog modal-dialog-centered">
@@ -6075,7 +5992,6 @@
     </div>
 </div>
 <!-- /Mute User -->            
-
 <!-- Delete  Account -->
 <div class="modal fade" id="delete-account">
     <div class="modal-dialog modal-dialog-centered">
@@ -6134,7 +6050,6 @@
     </div>
 </div>
 <!-- /Delete Account -->
-
 <!-- Logout -->
 <div class="modal fade" id="acc-logout">
     <div class="modal-dialog modal-dialog-centered">
@@ -6167,9 +6082,7 @@
     </div>
 </div>
 <!-- /Logout -->
-
 @endif
-
 @if(Route::is(['my-status']))
  <!-- view-status -->
  <div class="modal fade" id="view-status">
@@ -6235,7 +6148,6 @@
     </div>
 </div>
 <!-- /view-status -->
-
   <!-- Add Status -->
   <div class="modal fade" id="new-status">
     <div class="modal-dialog modal-dialog-centered">
@@ -6427,7 +6339,6 @@
     </div>
 </div>
 <!-- /Mute User -->            
-
 <!-- Delete  Account -->
 <div class="modal fade" id="delete-account">
     <div class="modal-dialog modal-dialog-centered">
@@ -6486,7 +6397,6 @@
     </div>
 </div>
 <!-- /Delete Account -->
-
 <!-- Logout -->
 <div class="modal fade" id="acc-logout">
     <div class="modal-dialog modal-dialog-centered">
@@ -6519,8 +6429,6 @@
     </div>
 </div>
 <!-- /Logout -->
-
-
 @endif
 @if(Route::is(['status']))
     <!-- Add Status -->
@@ -6556,8 +6464,6 @@
         </div>
     </div>
     <!-- /Add Status -->
-
-
     <!-- Status -->
     <div class="modal fade" id="upload-file-image">
         <div class="modal-dialog modal-dialog-centered">
@@ -6785,7 +6691,6 @@
 </div>
 </div>
 <!-- /Add Contact -->
-
 <!-- Add Call -->
 <div class="modal fade" id="new-call">
 <div class="modal-dialog modal-dialog-centered">
@@ -6873,7 +6778,6 @@
 </div>
 </div>
 <!-- /Add Call -->
-
 <!-- Edit Contact -->
 <div class="modal fade" id="edit-contact">
 <div class="modal-dialog modal-dialog-centered">
@@ -7032,7 +6936,6 @@
 </div>
 </div>
 <!-- /Edit Contact -->
-
 <!-- Contact Detail -->
 <div class="modal fade" id="contact-details">
 <div class="modal-dialog modal-dialog-centered">
@@ -7164,7 +7067,6 @@
 </div>
 </div>
 <!-- /Contact Detail -->
-
 <!-- Invite -->
 <div class="modal fade" id="invite">
 <div class="modal-dialog modal-dialog-centered">
@@ -7203,7 +7105,6 @@
 </div>
 </div>
 <!-- /Invite -->     
-
 <!-- New Chat -->
 <div class="modal fade" id="new-chat">
 <div class="modal-dialog modal-dialog-centered">
@@ -7295,7 +7196,6 @@
 </div>
 </div>
 <!-- /New Chat -->  
-
 <!-- Delete Chat -->
 <div class="modal fade" id="delete-chat">
 <div class="modal-dialog modal-dialog-centered">
@@ -7328,7 +7228,6 @@
 </div>
 </div>
 <!-- /Delete Chat -->
-
 <!-- Voice Call -->
 <div class="modal fade" id="voice_call">
 <div class="modal-dialog modal-dialog-centered">
@@ -7363,7 +7262,6 @@
 </div>
 </div>
 <!-- /Voice Call -->
-
 <!-- Voice Call attend -->
 <div class="modal fade" id="voice_attend" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered">
@@ -7442,7 +7340,6 @@
 </div>
 </div>
 <!-- /Voice Call attend -->
-
 <!-- Voice Call group -->
 <div class="modal fade" id="voice_group" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -7530,7 +7427,6 @@
                         </div>
                                 
                     </div>
-
                 </div>  
                 <div class="tab-pane fade active show" id="pills-group1" role="tabpanel" aria-labelledby="pills-group1-tab">
                     <div class="row">
@@ -7671,7 +7567,6 @@
 </div>
 </div>
 <!-- /Voice Call group -->
-
 <!-- Video Call -->
 <div class="modal fade" id="video-call">
 <div class="modal-dialog modal-dialog-centered">
@@ -7773,7 +7668,6 @@
     </div>
 </div>
 </div>                    
-
 <!-- Video Call group -->
 <div class="modal fade" id="video_group" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -7845,7 +7739,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>  
                 <div class="tab-pane fade active show" id="pills-group2" role="tabpanel" aria-labelledby="pills-group2-tab">
                     <div class="row row-gap-4">
@@ -7877,7 +7770,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <div class="modal-footer justify-content-center border-0">
@@ -7910,7 +7802,6 @@
 </div>
 </div>
 <!-- /Video Call group -->
-
 <!-- Block User -->
 <div class="modal fade" id="block-user">
 <div class="modal-dialog modal-dialog-centered">
@@ -7943,7 +7834,6 @@
 </div>
 </div>
 <!-- /Block User -->
-
 <!-- New Group -->
 <div class="modal fade" id="new-group">
 <div class="modal-dialog modal-dialog-centered">
@@ -8011,7 +7901,6 @@
 </div>
 </div>
 <!-- /New Group --> 
-
 <!-- Add Group -->
 <div class="modal fade" id="add-group">
 <div class="modal-dialog modal-dialog-centered">
@@ -8103,7 +7992,6 @@
 </div>
 </div>
 <!-- /Add group -->  
-
 <!-- Mute User -->
 <div class="modal fade" id="mute-user">
 <div class="modal-dialog modal-dialog-centered">
@@ -8193,7 +8081,6 @@
 </div>
 </div>
 <!-- /Mute User -->            
-
 <!-- Delete  Account -->
 <div class="modal fade" id="delete-account">
 <div class="modal-dialog modal-dialog-centered">
@@ -8252,7 +8139,6 @@
 </div>
 </div>
 <!-- /Delete Account -->
-
 <!-- Logout -->
 <div class="modal fade" id="acc-logout">
 <div class="modal-dialog modal-dialog-centered">
@@ -8285,7 +8171,6 @@
 </div>
 </div>
 <!-- /Logout -->
-
 @endif
 @if(Route::is(['user-status']))
  <!-- Add Status -->
@@ -8307,7 +8192,6 @@
                             <span class="text-gray-9 d-block">Maximum size: 50MB</span>
                         </div>
                      </form>
-
                 </div>
                 <div class="row g-3">       
                     <div class="col-6">                  
@@ -8480,7 +8364,6 @@
     </div>
 </div>
 <!-- /Mute User -->            
-
 <!-- Delete  Account -->
 <div class="modal fade" id="delete-account">
     <div class="modal-dialog modal-dialog-centered">
@@ -8539,7 +8422,6 @@
     </div>
 </div>
 <!-- /Delete Account -->
-
 <!-- Logout -->
 <div class="modal fade" id="acc-logout">
     <div class="modal-dialog modal-dialog-centered">
@@ -8572,5 +8454,4 @@
     </div>
 </div>
 <!-- /Logout -->
-
 @endif

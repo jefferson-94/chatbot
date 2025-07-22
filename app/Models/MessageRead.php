@@ -9,6 +9,8 @@ class MessageRead extends Model
 {
     use HasFactory;
 
+    protected $table = 'message_reads';
+
     public $timestamps = false;
 
     protected $fillable = [

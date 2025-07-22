@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('phone_number'); // Número com DDI
             $table->string('phone_number_id'); // ID da Meta API
             $table->string('access_token'); // Token de acesso à API
-            $table->timestamps();
+            $table->timestamps(); // cria created_at e updated_at
         });
     }
 

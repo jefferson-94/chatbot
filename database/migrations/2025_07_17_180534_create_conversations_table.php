@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('customer_name')->nullable(); // nome do contato
             $table->foreignId('assigned_user_id')->nullable()->constrained('users')->nullOnDelete(); // atendente
             $table->boolean('is_active')->default(true);
-            $table->timestamps();
+            $table->timestamps(); // cria created_at e updated_at
+            $table->timestamp('closed_at')->nullable();
         });
     }
 

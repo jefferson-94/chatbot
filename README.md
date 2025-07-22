@@ -12,3 +12,12 @@ APP_LOCALE=pt_BR
 
 //migrate BD
 php artisan migrate
+
+
+
+Run composer update
+Run php artisan key:generate
+Run php artisan migrate
+npm install
+npm run build
+Run php artisan serve
